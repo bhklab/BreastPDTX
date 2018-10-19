@@ -16,8 +16,8 @@ export HAPLOTYPECALLER_REP_DIR="/mnt/work1/users/bhklab/Users/jenny/repeated_nor
 # Set reference genome and target intervals
 # Referece genome is a concatenation of hg19 and mm10 from UCSC
 # Intervals consist of autosomes and chromosome X
-REFERENCE="/mnt/work1/users/home2/jennywa/BREAST_CANCER_PDTX_REFERENCE_GENOME/BREAST_CANCER_PDTX.fa"
-INTERVALS="/mnt/work1/users/home2/jennywa/autox.bed"
+REFERENCE="/mnt/work1/users/bhklab/Users/jenny/BREAST_CANCER_PDTX_REFERENCE_GENOME/BREAST_CANCER_PDTX.fa"
+INTERVALS="/mnt/work1/users/bhklab/Users/jenny/INTERVALS/autox.bed"
 
 
 ##### MODELS WITH ONLY 1 NORMAL SAMPLE #####
