@@ -9,7 +9,7 @@ export RAW_DIR="/mnt/work1/users/bhklab/Data/Breast_Cancer_PDTX"
 export COVERAGE_DIR="/mnt/work1/users/bhklab/Users/jenny/coverage"
 
 # Set target intervals (autosomes and chromosome X)
-INTERVALS="/mnt/work1/users/home2/jennywa/autox.bed"
+INTERVALS="/mnt/work1/users/bhklab/Users/jenny/INTERVALS/autox.bed"
 
 
 # Select raw BAM files based on which coverage files will be generated
