@@ -16,7 +16,7 @@ export RAW_INDEL_DIR="/mnt/work1/users/bhklab/Users/jenny/somatic_mutations/4b_r
 
 # Set reference genome
 # Referece genome is a concatenation of hg19 and mm10 from UCSC
-REFERENCE="/mnt/work1/users/home2/jennywa/BREAST_CANCER_PDTX_REFERENCE_GENOME/BREAST_CANCER_PDTX.fa"
+REFERENCE="/mnt/work1/users/bhklab/Users/jenny/BREAST_CANCER_PDTX_REFERENCE_GENOME/BREAST_CANCER_PDTX.fa"
 
 
 # Filter out reads with GQ < 20, FS > 40, and DP < 5
