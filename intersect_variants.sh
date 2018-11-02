@@ -2,7 +2,7 @@
 #
 #$ -cwd
 #$ -S /bin/bash
-# 
+#
 
 # Set paths for input and output directories
 export JENNY_SNV_DIR="/mnt/work1/users/bhklab/Users/jenny/somatic_mutations/4a_raw_SNP"
