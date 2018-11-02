@@ -2,7 +2,7 @@
 #
 #$ -cwd
 #$ -S /bin/bash
-# 
+#
 
 # Set path for VCF_Parser
 export VCF_PARSER_DIR="/mnt/work1/users/home2/jennywa/.local/bin"
