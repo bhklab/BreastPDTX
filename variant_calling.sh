@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#$ -cwd
+#$ -cwd 
 #$ -S /bin/bash
 #
 
