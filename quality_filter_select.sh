@@ -2,7 +2,7 @@
 #
 #$ -cwd
 #$ -S /bin/bash
-# 
+#
 
 # Set paths for GATK
 export JAVA_DIR="/mnt/work1/software/java/8/jre1.8.0_162/bin"
