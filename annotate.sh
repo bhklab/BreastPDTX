@@ -1,8 +1,8 @@
 # !/bin/bash
-# 
+#
 # $ -cwd
 # $ -S /bin/bash
-# 
+#
 
 # Set path for Oncotator
 export ONCOTATOR_DIR="/mnt/work1/software/oncotator/1.5.3.0"
