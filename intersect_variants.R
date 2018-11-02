@@ -1,4 +1,4 @@
-# Reformat VCF files and concatenate all samples for authors' results
+# Reformat VCF files and concatenate all samples for authors' results 
 library(VariantAnnotation)
 setwd("/mnt/work1/users/bhklab/Users/jenny/author/VCF")
 allF <- dir(pattern="vcf.gz$")
