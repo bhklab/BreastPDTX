@@ -9,6 +9,6 @@ Each day, a massive amount of data is shared by the cancer research community (a
 
 Thanks to the increased number of data sharing platforms, the storage and retrieval of data have been made simpler than ever before. However, the way in which these data are shared are still not intuitive and straightforward for someone fresh to sort through and do high-level analysis.
 
-Generally, people ask for codes that have generated the published results. However, having the code available is completely different from someone actually working thorugh the code in hopes of reproducing the same results. This is what this project aims to accomplish - a comprehensive step-by-step tutorial/guide for anyone in computational biology and cancer genomics to follow along and validate the findings.
+Generally, people ask for codes that have generated the published results. However, having the code available is completely different from someone actually working through the code in hopes of reproducing the same results. This is what this project aims to accomplish - a comprehensive step-by-step tutorial/guide for anyone in computational biology and cancer genomics to follow along and validate the findings.
 
 Again, please take a look at the [Wiki](https://github.com/bhklab/BreastPDTX/wiki) should you wish to see the pipeline documentation.
