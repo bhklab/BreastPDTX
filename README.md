@@ -1,7 +1,7 @@
 # BREAST CANCER PDTX
 ###### Bruna, A. *et al.* (2016). A biobank of breast cancer explants with preserved intra-tumor heterogeneity to screen anticancer compounds. *Cell.* **167**(1):260-274.
 
-Manuscript available [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5037319/); dataset [here](https://www.ebi.ac.uk/ega/studies/EGAS00001001913)
+Manuscript available [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5037319/); dataset [here](https://www.ebi.ac.uk/ega/studies/EGAS00001001913).
 
 This is a BHKLAB project focused on creating, standardizing, and automating a computational pipeline for a set of breast cancer patient-derived tumor xenograft (PDTX) models, as well as patient-derived tumor cells (PDTCs). This is the first PDTX/PDTC dataset in the laboratory. Please head over to the [Wiki](https://github.com/bhklab/BreastPDTX/wiki) if you would like to follow along the detailed and reproducible workflow.
 
