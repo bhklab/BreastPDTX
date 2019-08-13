@@ -9,14 +9,15 @@
 
 library(stringr)
 
-setwd("/Users/jennywang/Desktop/")
+setwd("~/Desktop/BreastPDTX/data/results/sensitivity")
 
-samples <- read.csv(file="/Users/jennywang/Desktop/PDX SAMPLE LIST.csv", header=FALSE)
-
+samples <- read.csv(file="~/Desktop/BreastPDTX/data/cell_annotation_all.csv", header=TRUE)
+samples$X <- NULL; samples$BreastPDTX <- NULL
 
 # Assign patient IDs
-samples$MODEL <- sapply(strsplit(as.character(samples$V1), split="-"), function(x) x[1])
-samples$tmp <- sapply(strsplit(as.character(samples$V1), split="-"), function(x) x[2])
+samples$MODEL <- sapply(strsplit(as.character(samples$unique.cellid), split="-"), function(x) x[1])
+samples$tmp <- sapply(strsplit(as.character(samples$unique.cellid), split="-"), function(x) x[2])
+
 
 
 # Assign sample types
@@ -31,6 +32,9 @@ samples$TYPE <- ifelse(grepl("C", samples$tmp), "PDC", samples$TYPE)
 # Is the sample a replicate?
 samples$REPLICATE <- ifelse(grepl("R", samples$tmp), "YES", "NO")
 
+samples$tmp <- NULL
+rownames(samples) <- samples$unique.cellid
+write.csv(samples, file="~/Desktop/BreastPDTX/data/cell.csv")
 
 # Assign PDTC passage number
 samples$C <- ""

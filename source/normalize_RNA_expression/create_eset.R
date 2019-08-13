@@ -13,5 +13,6 @@ pdata <- AnnotatedDataFrame(pdata)
 fdata <- fdata[order(rownames(fdata)), ]
 fdata <- AnnotatedDataFrame(fdata)
 eset <- new("ExpressionSet", exprs=m, phenoData=pdata, featureData=fdata)
+pData(eset)$cellid <- rownames(pdata(eset))
 
 saveRDS(eset, file="~/Desktop/normalize_RNA_expression/final_eset.Rda")
