@@ -1,6 +1,6 @@
 library(Biobase)
 
-expression <- readRDS("~/Desktop/normalize_RNA_expression/after_normalization.Rda")
+expression <- readRDS("~/Desktop/BreastPDTX/data/results/normalize_RNA_expression/after_normalization.Rda")
 m <- exprs(expression)
 pdata <- pData(expression); rownames(pdata) <- pdata$ID
 fdata <- fData(expression); rownames(fdata) <- make.names(fdata$symbol, unique=TRUE)
