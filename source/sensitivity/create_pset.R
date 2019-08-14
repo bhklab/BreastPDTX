@@ -25,4 +25,4 @@ final_PSet <- PharmacoSet(name="BreastPDTX",
                     datasetType="sensitivity",
                     verify=TRUE)
 
-saveRDS(final_PSet, file="~/Desktop/BreastPDTX/data/results/sensitivity/BreastPDTX_PSet")
+saveRDS(final_PSet, file="~/Desktop/BreastPDTX/data/results/sensitivity/BreastPDTX_PSet.Rda")
