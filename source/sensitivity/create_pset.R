@@ -14,7 +14,7 @@ eset <- readRDS("~/Desktop/BreastPDTX/data/results/normalize_RNA_expression/fina
 Biobase::annotation(eset) <- "rna"
 
 final_PSet <- PharmacoSet(name="BreastPDTX",
-                    molecularProfiles=list(eset),
+                    molecularProfiles=list("rna"=eset),
                     cell=cell,
                     drug=drug,
                     sensitivityInfo=info,
