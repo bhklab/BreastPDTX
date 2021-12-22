@@ -1,4 +1,4 @@
-raw_drug <- read.csv("~/Desktop/BreastPDTX/data/RawDataDrugsSingleAgents.csv")
+raw_drug <- read.csv("data/RawDataDrugsSingleAgents.csv")
 raw_drug <- raw_drug[, -c(1, 3, 15, 16)]
 raw_drug <- raw_drug[order(raw_drug$DRUG_ID), ]
 

@@ -2,18 +2,21 @@ library(beadarray)
 library(limma)
 library(illuminaHumanv4.db)
 
-datasumm <- readRDS("~/Desktop/BreastPDTX/data/results/normalize_RNA_expression/before_normalization.Rda")
-det <- readRDS("~/Desktop/BreastPDTX/data/results/normalize_RNA_expression/detection_pval.Rda")
+
+
+
+datasumm <- readRDS("data/results/normalize_RNA_expression/before_normalization.Rda")
+det <- readRDS("data/results/normalize_RNA_expression/detection_pval.Rda")
 
 proportion <- propexpr(exprs(datasumm), status=fData(datasumm)$Status)
-pdf("~/Desktop/BreastPDTX/data/results/normalize_RNA_expression/expressed_probes.pdf",
+pdf("data/results/normalize_RNA_expression/expressed_probes.pdf",
     width=10, height=25)
 dotchart(proportion, labels=pData(datasumm)$ID,
          xlab="Proportion of probes expressed above the level of negative controls", pch=19)
 dev.off()
 slide <- colnames(datasumm)
 slide <- sapply(strsplit(slide, "_"), function(x) x[1])
-pdf("~/Desktop/BreastPDTX/data/results/normalize_RNA_expression/MDS_batch.pdf",
+pdf("data/results/normalize_RNA_expression/MDS_batch.pdf",
     width=10, height=10)
 plotMDS(exprs(datasumm), col=as.numeric(factor(slide)), labels=pData(datasumm)$ID)
 dev.off()
@@ -40,4 +43,4 @@ dim(normalized)
 dim(normalized.filt)
 
 
-saveRDS(normalized.filt, "~/Desktop/BreastPDTX/data/results/normalize_RNA_expression/after_normalization.Rda")
+saveRDS(normalized.filt, "data/results/normalize_RNA_expression/after_normalization.Rda")
